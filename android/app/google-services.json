@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65853869837",
+    "project_id": "patience-void",
+    "storage_bucket": "patience-void.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65853869837:android:eaaf8268eaf6d0f92f2a44",
+        "android_client_info": {
+          "package_name": "com.example.void_quest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJjwa-BFqRlv5nJeXnT0ZKS4miWzfq6ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
