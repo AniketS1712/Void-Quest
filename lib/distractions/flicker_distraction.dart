@@ -5,7 +5,7 @@ Future<void> flickerDistraction(BuildContext context) async {
   final overlay = Overlay.of(context);
 
   final random = Random();
-  final flickerCount = random.nextInt(2) + 4; // 4 to 5 flickers
+  final flickerCount = random.nextInt(2) + 4;
 
   for (int i = 0; i < flickerCount; i++) {
     final entry = OverlayEntry(
@@ -20,6 +20,6 @@ Future<void> flickerDistraction(BuildContext context) async {
     await Future.delayed(const Duration(milliseconds: 100));
     entry.remove();
     await Future.delayed(
-        Duration(milliseconds: 30 + random.nextInt(50))); // slight jitter
+        Duration(milliseconds: 30 + random.nextInt(50)));
   }
 }

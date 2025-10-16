@@ -7,18 +7,14 @@ Future<void> adDistraction(BuildContext context) async {
     request: const AdRequest(),
     adLoadCallback: InterstitialAdLoadCallback(
       onAdLoaded: (InterstitialAd ad) {
-        debugPrint('[AdDistraction] Interstitial ad loaded.');
 
         ad.fullScreenContentCallback = FullScreenContentCallback(
           onAdShowedFullScreenContent: (ad) {
-            debugPrint('[AdDistraction] Ad shown.');
           },
           onAdDismissedFullScreenContent: (ad) {
-            debugPrint('[AdDistraction] Ad dismissed.');
             ad.dispose();
           },
           onAdFailedToShowFullScreenContent: (ad, error) {
-            debugPrint('[AdDistraction] Failed to show ad: $error');
             ad.dispose();
           },
         );
@@ -26,7 +22,6 @@ Future<void> adDistraction(BuildContext context) async {
         ad.show();
       },
       onAdFailedToLoad: (LoadAdError error) {
-        debugPrint('[AdDistraction] Failed to load ad: $error');
       },
     ),
   );

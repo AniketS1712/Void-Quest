@@ -13,11 +13,9 @@ Future<void> screenGlitchDistraction(BuildContext context) async {
     double left, top;
 
     if (index < 50) {
-      // Clustered around center
       left = centerX + (random.nextDouble() - 0.5) * size.width * 0.4;
       top = centerY + (random.nextDouble() - 0.5) * size.height * 0.4;
     } else {
-      // Random full-screen
       left = random.nextDouble() * size.width;
       top = random.nextDouble() * size.height;
     }

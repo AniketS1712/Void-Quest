@@ -16,7 +16,6 @@ class _RotatingBannerAdState extends State<RotatingBannerAd> {
 
   final List<String> _adUnitIds = [
     'ca-app-pub-1666012439060112/3856165087',
-    // Add more ad unit IDs here if needed
   ];
   int _currentIndex = 0;
 
@@ -39,7 +38,6 @@ class _RotatingBannerAdState extends State<RotatingBannerAd> {
         onAdFailedToLoad: (ad, error) {
           ad.dispose();
           if (!mounted) return;
-          debugPrint('BannerAd failed to load: $error');
           setState(() => _isAdLoaded = false);
         },
       ),
